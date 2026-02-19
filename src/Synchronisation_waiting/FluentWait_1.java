@@ -55,4 +55,10 @@ public class FluentWait_1 {
  Both WebDriverWait and FluentWait classes implement Wait interface	
 
 Fluent gives finds element at the polling interval used. Eg -> Riya developed a code of linkedIn in which linkedIn fetch message
-appears at interval of 15,30,60 and 90 seconds. There we can use fluent wait.  */
+appears at interval of 15,30,60 and 90 seconds. There we can use fluent wait. 
+
+One more Example : In E-commerce website when we done shopping and are on the payment page then adding card these are the message
+we get in that span of time ->
+Your card is accepted (3 sec) -> Your order is being processed (7th sec) -> Confirmation.
+Hence we will use fluent wait of pooling interval 3 sec.
+*/
