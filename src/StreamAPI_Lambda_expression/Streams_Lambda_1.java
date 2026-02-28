@@ -64,6 +64,10 @@ public class Streams_Lambda_1 {
 	//	limiting the output result
 		Stream.of("Aman","Madan","Anchal","Meera","Shadow","Aayansh","Kumar","Maurya").filter(akm->akm.length()>4).limit(2)
 		.forEach(akm->System.out.println(akm));
+
+		// TO print all the element present in the arraylist
+		names.stream().forEach(name -> System.out.println(name));
+		// OR // names.stream().forEach(System.out::println);
 		
 	}
 	
