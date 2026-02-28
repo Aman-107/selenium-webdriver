@@ -43,7 +43,7 @@ public class Streams_Lambda_1 {
 		
 		// there is no life for intermediate operation if there is no terminal operation.
 		// terminal operation will execute only if inter operation(filter) returns true.
-		// We can create stream ( Stream.of() )
+		// We can create stream with stream package ( Stream.of() )
 		// how to use filter in Stream API
 		// s -> s.actions -> we can define any char value without initialization 
 		long c = al.stream().filter(s -> s.startsWith("A")).count();
