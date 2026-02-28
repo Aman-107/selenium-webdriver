@@ -46,7 +46,9 @@ public class Streams_Lambda_1 {
 		// We can create stream with stream package ( Stream.of() )
 		// how to use filter in Stream API
 		// s -> s.actions -> we can define any char value without initialization 
-		long c = al.stream().filter(s -> s.startsWith("A")).count();
+		long c = al.stream().filter(s -> {     // if there are multiple conditions then we can use {} braces
+			return s.startsWith("A");
+		}).count();
 		System.out.println(c);
 		
 		long ak = Stream.of("Aman","Madan","Anchal","Meera","Shadow","Aayansh","Kumar","Maurya").filter(a->a.startsWith("K")).count();
