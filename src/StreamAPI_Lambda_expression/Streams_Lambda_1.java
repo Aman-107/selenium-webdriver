@@ -47,7 +47,7 @@ public class Streams_Lambda_1 {
 		// how to use filter in Stream API
 		// s -> s.actions -> we can define any char value without initialization 
 		long c = al.stream().filter(s -> {     // if there are multiple conditions then we can use {} braces
-			return s.startsWith("A");
+			return s.toLowerCase().startsWith("a");   // here we are converting all elements first to small caps then checking condition of "a" thus it's compile time increases but in map it's reverse
 		}).count();
 		System.out.println(c);
 		
@@ -72,7 +72,7 @@ public class Streams_Lambda_1 {
 	}
 	
 	public void Streammap() {
-		// map is used in stream to alterate the changes in the filtered set.
+		// map is used in stream to alterate the changes in the filtered set. -> now here we are first elementing element by filter then apllying the upper case thus reducing compile time
 		ArrayList<String> al = new ArrayList<String>();
 		al.add("Aman");
 		al.add("Madan");
