@@ -96,7 +96,10 @@ public class Streams_Lambda_1 {
 		//newStream.sorted().forEach((s->System.out.println(s)));
 		
 		// check new concated stream contains word "Dark"
-		// above we have used newStream hence we can't do any other operation now on newStream therefore commented it
+		/* above we have used newStream hence we can't do any other operation now on newStream therefore commented it or we have
+		 to create a new Stream then perform the action since above we are calling names.stream() multiple times hence it's working
+		 but in this case we have initialised newStream and used it for sorting either we can call for every new execution or comment
+		 pervious actions. */
 		boolean flag = newStream.anyMatch(s->s.equalsIgnoreCase("Dark"));
 		System.out.println(flag);
 		Assert.assertTrue(flag);
